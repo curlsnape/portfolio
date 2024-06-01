@@ -2,7 +2,7 @@ import styles from './ProjectsStyles.module.css';
 import movixer from '../../assets/Movixer.png';
 import refokus from '../../assets/refokus.png';
 import obys from '../../assets/obys.png';
-// import fitLift from '../../assets/fitlift.png';
+import exoape from '../../assets/exoape.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -10,6 +10,12 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle font-semibold tracking-wide text-xl">Projects</h1>
       <div className={styles.projectsContainer}>
+      <ProjectCard
+          src={exoape}
+          link="https://exoape-clone-beta.vercel.app/"
+          h3="Exoape"
+          p="Portfolio Website"
+        />
         <ProjectCard 
           src={movixer}
           link="https://movixer.vercel.app/"
@@ -28,12 +34,7 @@ function Projects() {
           h3="Obys Agency-clone"
           p="Portfolio Website"
         />
-        {/* <ProjectCard
-          src={fitLift}
-          link=""
-          h3="FitLift"
-          p="Fitness App"
-        /> */}
+ 
       </div>
     </section>
   );
