@@ -18,7 +18,7 @@ function Projects() {
         />
         <ProjectCard
           src={refokus}
-          link="https://refokus-clone-beta.vercel.app/"
+          link="https://refokus-clone-nu.vercel.app/"
           h3="Refokus-clone"
           p="Portfolio Website"
         />
