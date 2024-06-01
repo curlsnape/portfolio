@@ -35,7 +35,7 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1 className='text-xl font-semibold font-[inter]'>
+        <h1 className='text-xl font-bold font-[inter]'>
           Akshay
          
           Sawant
