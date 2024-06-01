@@ -52,7 +52,7 @@ function Hero() {
         </span>
         <p style={{marginLeft:'9px'}}
          className={styles.description}>
-          Heyy, myself Akshay With a passion for developing modern and creative React web apps for commercial
+          Heyy, myself Akshay with a passion for developing modern and creative React web apps for commercial
           businesses.
         </p>
         <a href={CV} download>
