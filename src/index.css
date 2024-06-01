@@ -10,18 +10,7 @@
     font-family: Inter;
     src: url('../public/Inter-Bold.woff2');
 }
-@font-face {
-    font-family: Inter;
-    src: url('../public/Inter-ExtraBold.woff2');
-}
-@font-face {
-    font-family: Inter;
-    src: url('../public/Inter-ExtraLight.woff2');
-}
-@font-face {
-    font-family: Inter;
-    src: url('../public/Inter-Light.woff2');
-}
+
 @font-face {
     font-family: Inter;
     src: url('../public/Inter-Medium.woff2');
@@ -29,8 +18,4 @@
 @font-face {
     font-family: Inter;
     src: url('../public/Inter-SemiBold.woff2');
-}
-@font-face {
-    font-family: Inter;
-    src: url('../public/Inter-Thin.woff2');
 }
