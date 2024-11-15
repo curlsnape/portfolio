@@ -31,20 +31,27 @@ function Hero() {
 
   const tl = gsap.timeline();
   useGSAP(() => {
-
-    tl.from(name.current, {
-      x: -500,
-      opacity: 0,
-      duration: 0.4,
-      delay: 0.2  ,
-      transition: Power4,
-    },"same");
-    tl.from(img.current, {
-      opacity: 0,
-      x:150,
-      rotate: 360,
-      duration: 0.5,
-    },"same");
+    tl.from(
+      name.current,
+      {
+        x: -500,
+        opacity: 0,
+        duration: 0.4,
+        delay: 0.2,
+        transition: Power4,
+      },
+      "same"
+    );
+    tl.from(
+      img.current,
+      {
+        opacity: 0,
+        x: 150,
+        rotate: 360,
+        duration: 0.5,
+      },
+      "same"
+    );
     tl.from(role.current, {
       x: 500,
       opacity: 0,
@@ -52,30 +59,37 @@ function Hero() {
       transition: Power4,
       duration: 0.4,
     });
-    tl.from(linkend.current, {
-      x: 200,
-      opacity: 0,
-      rotate: 360,
-      delay: 0.2,
-      transition: Power4,
-      duration: 0.7,
-    },"hey");
-    tl.from(git.current, {
-      x: -100,
-      opacity: 0,
-      rotate: -360,
-      delay: 0.2,
-      transition: Power4,
-      duration: 0.7,
-    },"hey");
-
+    tl.from(
+      linkend.current,
+      {
+        x: 200,
+        opacity: 0,
+        rotate: 360,
+        delay: 0.2,
+        transition: Power4,
+        duration: 0.7,
+      },
+      "hey"
+    );
+    tl.from(
+      git.current,
+      {
+        x: -100,
+        opacity: 0,
+        rotate: -360,
+        delay: 0.2,
+        transition: Power4,
+        duration: 0.7,
+      },
+      "hey"
+    );
   });
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
           ref={img}
-          style={{ marginLeft: "62px" }}
+          style={{ marginLeft: "66px" }}
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Akshay Sawant"
@@ -112,13 +126,13 @@ function Hero() {
           "Enthusiastic Frontend Developer, ex",
           "Intern at XIRCLS, with a focus on",
           "React.js and JavaScript.",
-           "Eager to learn and",
+          "Eager to learn and",
           "contribute to creating impactful",
           "digital solutions. Let’s connect",
           "and innovate together!",
         ].map((item, i) => (
           <p style={{ marginLeft: "9px" }} className={styles.description}>
-            <motion.span 
+            <motion.span
               initial={{ rotate: 90, y: "100%", opacity: 0 }}
               animate={{ rotate: 0, y: 0, opacity: 1 }}
               transition={{
