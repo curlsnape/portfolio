@@ -38,13 +38,13 @@ function Hero() {
       duration: 0.4,
       delay: 0.2  ,
       transition: Power4,
-    });
+    },"same");
     tl.from(img.current, {
       opacity: 0,
       x:150,
       rotate: 360,
       duration: 0.5,
-    });
+    },"same");
     tl.from(role.current, {
       x: 500,
       opacity: 0,
@@ -53,33 +53,29 @@ function Hero() {
       duration: 0.4,
     });
     tl.from(linkend.current, {
-      x: -500,
-      opacity: 0,
-      rotate: -360,
-      delay: 0.2,
-      transition: Power4,
-      duration: 0.7,
-    });
-    tl.from(git.current, {
-      x: 500,
+      x: 200,
       opacity: 0,
       rotate: 360,
       delay: 0.2,
       transition: Power4,
       duration: 0.7,
-    });
-
-    tl.from(spara.current, {
+    },"hey");
+    tl.from(git.current, {
+      x: -100,
       opacity: 0,
-      rotate: 90,
-    });
+      rotate: -360,
+      delay: 0.2,
+      transition: Power4,
+      duration: 0.7,
+    },"hey");
+
   });
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
           ref={img}
-          style={{ marginLeft: "58px" }}
+          style={{ marginLeft: "62px" }}
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Akshay Sawant"
@@ -100,11 +96,11 @@ function Hero() {
           Frontend Developer
         </h2>
         <span className=" overflow-hidden">
-          <a ref={linkend} href="https://github.com/curlsnape" target="_blank">
+          <a ref={git} href="https://github.com/curlsnape" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
           <a
-            ref={git}
+            ref={linkend}
             href="https://www.linkedin.com/in/akshay-nandita-sawant-026059218/"
             target="_blank"
           >
