@@ -10,11 +10,13 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
+    <div className='overflow-hidden'>
       <Hero />
       <Projects />
       <Skills />
       <Contact />
       <Footer />
+    </div>
     </>
   );
 }

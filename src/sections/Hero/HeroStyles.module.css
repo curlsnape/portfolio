@@ -8,7 +8,7 @@
   min-height: 500px;
 
   .hero {
-    max-width: 200px;
+    max-width:200px;
   }
 
   span {
@@ -69,23 +69,24 @@
 }
 
 .description {
-  max-width: 24ch;
+  max-width: 35ch;
 }
 
 .info {
   display: flex;
+  
   flex-direction: column;
   gap: 20px;
 }
 
 @media (width >= 800px) {
-  .container {
+  .container { 
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
 
     .hero {
-      max-width: 350px;
+      max-width: 300px;
       width: 350px;
     }
   }

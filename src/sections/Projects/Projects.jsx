@@ -4,8 +4,10 @@ import refokus from '../../assets/refokus.png';
 import obys from '../../assets/obys.png';
 import exoape from '../../assets/exoape.png';
 import ProjectCard from '../../common/ProjectCard';
+import { motion } from 'motion/react';
 
 function Projects() {
+  
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle font-semibold tracking-wide text-xl">Projects</h1>
