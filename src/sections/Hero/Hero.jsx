@@ -31,17 +31,24 @@ function Hero() {
 
   const tl = gsap.timeline();
   useGSAP(() => {
+
     tl.from(name.current, {
       x: -500,
       opacity: 0,
       duration: 0.4,
-      delay: 0.5,
+      delay: 0.2  ,
       transition: Power4,
+    });
+    tl.from(img.current, {
+      opacity: 0,
+      x:150,
+      rotate: 360,
+      duration: 0.5,
     });
     tl.from(role.current, {
       x: 500,
       opacity: 0,
-      delay: 0.5,
+      delay: 0.2,
       transition: Power4,
       duration: 0.4,
     });
@@ -49,7 +56,7 @@ function Hero() {
       x: -500,
       opacity: 0,
       rotate: -360,
-      delay: 0.5,
+      delay: 0.2,
       transition: Power4,
       duration: 0.7,
     });
@@ -57,16 +64,11 @@ function Hero() {
       x: 500,
       opacity: 0,
       rotate: 360,
-      delay: 0.5,
+      delay: 0.2,
       transition: Power4,
       duration: 0.7,
     });
-    tl.from(img.current, {
-      opacity: 0,
-      x:250,
-      rotate: 360,
-      duration: 0.5,
-    });
+
     tl.from(spara.current, {
       opacity: 0,
       rotate: 90,
@@ -113,11 +115,8 @@ function Hero() {
         {[
           "Enthusiastic Frontend Developer, ex",
           "Intern at XIRCLS, with a focus on",
-          "React.js and JavaScript. I’m",
-          "currently expanding my skill set",
-          "into Backend Development, working",
-          "towards becoming a full MERN Stack",
-          "developer. Eager to learn and",
+          "React.js and JavaScript.",
+           "Eager to learn and",
           "contribute to creating impactful",
           "digital solutions. Let’s connect",
           "and innovate together!",
@@ -131,7 +130,7 @@ function Hero() {
                 duration: 0.8,
                 delay: i * 0.3,
               }}
-              className="inline-block origin-left leading-4 "
+              className="inline-block origin-left leading-[2.2vw] sm:leading-3 "
             >
               {item}
             </motion.span>
