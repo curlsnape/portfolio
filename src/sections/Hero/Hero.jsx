@@ -123,14 +123,12 @@ function Hero() {
         </span>
 
         {[
-          "Enthusiastic Frontend Developer, ex",
-          "Intern at XIRCLS, with a focus on",
-          "React.js and JavaScript.",
-          "Eager to learn and",
-          "contribute to creating impactful",
-          "digital solutions. Let’s connect",
-          "and innovate together!",
-        ].map((item, i) => (
+  "Frontend Developer & UI Enthusiast",
+  "Bringing ideas to life with React.js & JavaScript.",
+  "Passionate about performance, design, and interaction.",
+  "Let’s build web experiences that stand out!"
+]
+.map((item, i) => (
           <p style={{ marginLeft: "9px" }} className={styles.description}>
             <motion.span
               initial={{ rotate: 90, y: "100%", opacity: 0 }}
