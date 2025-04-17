@@ -139,7 +139,7 @@ function Hero() {
                 duration: 0.8,
                 delay: i * 0.3,
               }}
-              className="inline-block origin-left leading-[2.2vw] sm:leading-3 "
+              className="inline-block origin-left leading-[3.2vw] sm:leading-5 "
             >
               {item}
             </motion.span>
@@ -147,7 +147,7 @@ function Hero() {
         ))}
 
         <a href={CV} download>
-          <button className="hover mr-3">Resume</button>
+          <button className="hover mt-3">Resume</button>
         </a>
       </div>
     </section>
