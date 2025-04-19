@@ -106,7 +106,7 @@ function Hero() {
         <h1 ref={name} className="text-xl  font-bold font-[inter]">
           Akshay Sawant
         </h1>
-        <h2 ref={role} className="text-lg font-semibold font-[inter]">
+        <h2 ref={role} className="text-2xl font-extrabold font-[inter]">
           Frontend Developer
         </h2>
         <span className=" overflow-hidden">
@@ -139,7 +139,7 @@ function Hero() {
                 duration: 0.8,
                 delay: i * 0.3,
               }}
-              className="inline-block origin-left leading-[4vw] sm:leading-[2.8vw] "
+              className="inline-block origin-left leading-[4vw] sm:leading-[2.1vw] "
             >
               {item}
             </motion.span>
