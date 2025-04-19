@@ -124,10 +124,10 @@ function Hero() {
 
         {[
           "Creative Frontend Developer",
-          "Crafting sleek, responsive web interfaces",
-          "with React.js, JavaScript & a designer’s eye.",
-          "Passionate about clean code, fluid UX,",
-          "and building immersive digital experiences.",
+          "Crafting sleek, responsive web interfaces with React.js,",
+          "JavaScript & a designer’s eye.",
+          "Passionate about clean code,",
+          "fluid UX, and building immersive digital experiences.",
           "Let’s create something exceptional together!",
         ].map((item, i) => (
           <p style={{ marginLeft: "9px" }} className={styles.description}>
@@ -139,7 +139,7 @@ function Hero() {
                 duration: 0.8,
                 delay: i * 0.3,
               }}
-              className="inline-block origin-left leading-[3.2vw] sm:leading-5 "
+              className="inline-block origin-left leading-[4vw] sm:leading-[2.8vw] "
             >
               {item}
             </motion.span>
