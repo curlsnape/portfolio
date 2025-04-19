@@ -139,7 +139,7 @@ function Hero() {
                 duration: 0.8,
                 delay: i * 0.3,
               }}
-              className="inline-block origin-left leading-[4vw] sm:leading-[2.1vw] "
+              className="inline-block origin-left leading-[4.5vw] sm:leading-[2.1vw] "
             >
               {item}
             </motion.span>
