@@ -5,9 +5,9 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'light'
-  );
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'dark'; // Default to dark
+  });
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
